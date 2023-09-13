@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+:root{
+    --main-color: hsl(218, 39%, 14%);
+    --second-color: hsl(222, 25%, 10%);
+    --third-color: hsl(214, 84%, 56%);
+    --four-color: hsl(0, 0%, 88%);
+}
+
+section {
+    padding: 50px 10%;
+}
+
+*::selection {
+    color: #fff;
+    background: var(--third-color);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-color);
+    box-shadow: 0 4px 41px rgb(14, 55, 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--four-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: var(--third-color);
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--second-color);
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+    color: var(--four-color);
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(-0px, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--four-color);
+}
+
+.home-text h1 {
+    font-size: 2.9rem;
+    color: var(--third-color);
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--four-color);
+    text-transform: uppercase;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    position: relative;
+    font-size: 2rem;
+    color: var(--third-color);
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--four-color);
+}
+
+.content {
+    background: var(--second-color);
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.content-container .box {
+    flex: 1 1 10rem;
+    background: var(--third-color);
+    padding: 30px;
+    display: flexbox;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.content-container .box .box-img{
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.content-container .box .box-img img {
+    width: 290px;
+    height: 170px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footer {
+    background: var(--second-color);
+    height: 30;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 200px;
+    color: #fff;
+}
+
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
